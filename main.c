@@ -167,21 +167,7 @@ void banner(void){
 
     SetConsoleTextAttribute(hConsole, 7);
 	
-	
-	
-	puts("                           888                   888      d8888   d8888  ");
-	puts("                           888                   888        888     888  ");
-	puts(".d8888b  888  888 88888b.  888  .d88b.   .d8888b 888  888   888     888  ");
-	puts("88K      888  888 888  88b 888 d88  88b d88P     888 .88P   888     888  ");
-	puts(" Y8888b. 888  888 888  888 888 888  888 888      888888K    888     888  ");
-	puts("     X88 Y88b 888 888  888 888 Y88..88P Y88b.    888  88b   888     888  ");
-	puts(" 88888P'   Y88888 888  888 888   Y88P     Y8888P 888  888 8888888 8888888");
-	puts("\n\t\tCoded by Aleksandar 'revengsmK' (github.com/revengsmK)\n\n");
-	
 	FillConsoleOutputAttribute(hConsole,11,size,coordScreen,&bytesWritten);
-	
-	puts("Windows 11 Pro Personalization settings unlock tool");
-	puts("===================================================================\n");  
 	
 }
 
@@ -311,8 +297,5 @@ int main(void){
 cleanup:
    GlobalFree(fileBuf);
    CloseHandle(hFile);  
-	
-	puts("\nPress any key to exit...");
-
 	return 0;
 }
