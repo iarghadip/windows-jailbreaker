@@ -9,7 +9,7 @@ if %errorLevel% NEQ 0 (
 takeown /f %systemroot%\System32\SettingsEnvironment.Desktop.dll /a
 icacls %systemroot%\System32\SettingsEnvironment.Desktop.dll /grant Administrators:F
 
-gcc .\sunlock11.c -o run.exe
+gcc .\main.c -o run.exe
 .\run.exe
 del .\run.exe
 
