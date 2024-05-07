@@ -313,7 +313,6 @@ cleanup:
    CloseHandle(hFile);  
 	
 	puts("\nPress any key to exit...");
-	getch();
 
 	return 0;
 }
