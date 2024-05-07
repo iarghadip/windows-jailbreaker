@@ -19,15 +19,14 @@ if not "%errorlevel%" equ "0" (
     scoop install main/gcc
 )
 
-takeown /f %systemroot%\System32\SettingsEnvironment.Desktop.dll /a
-icacls %systemroot%\System32\SettingsEnvironment.Desktop.dll /grant Administrators:F
-
 where .\run.exe >nul 2>&1
 if not "%errorlevel%" equ "0" (
     echo Compiling main.c...
     gcc .\main.c -o run.exe
 )
 
+takeown /f %systemroot%\System32\SettingsEnvironment.Desktop.dll /a
+icacls %systemroot%\System32\SettingsEnvironment.Desktop.dll /grant Administrators:F
 .\run.exe
 slmgr -rearm
 
