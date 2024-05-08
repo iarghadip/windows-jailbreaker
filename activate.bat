@@ -1,2 +1,4 @@
- slmgr -rearm
- shutdown /r /f /t 0
+@echo off
+
+slmgr -rearm
+shutdown /r /f /t 0
